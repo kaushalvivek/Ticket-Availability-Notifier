@@ -44,9 +44,9 @@ target_mail = ''
 def search(mov,loc):
     req = requests.get('https://www.google.co.in/search?q=bms '+loc+' '+mov)
     soup = bs(req.text,'html.parser')
-    tag = soup.h3
-    link = tag.a
-    return link.attrs['href']
+    tags = soup.findAll('h3')
+    for i in range (3):
+        analyse(tags[i].a.attrs['href'],mov,loc)
 
 def mail (mov,loc):
     server = smtplib.SMTP('smtp.gmail.com', 587)
@@ -61,7 +61,7 @@ def mail (mov,loc):
 def analyse(link,mov,loc):
     if 'buytickets' in link:
         mail(mov,loc)
+        quit()
     
 link = search(mov,loc)
-analyse (link,mov,loc)
     
