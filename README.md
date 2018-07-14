@@ -25,7 +25,7 @@ mov = ''
 loc = ''
 
 # Login details of bot's gmail account
-email = ''
+bot_mail = ''
 password =''
 
 # Email address where you want to be notified
