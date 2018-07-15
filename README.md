@@ -1,6 +1,6 @@
 # Movie Ticket Availability Notifier
 
-There have been countless times when I wanted to but could not watch a movie on its first weekend because I was late in booking the tickets. This crontask script is targetted at overcoming this demerit.
+There have been times when I wanted to, but could not watch a movie on its first weekend because I was late in booking the tickets. This crontask script will notify you, when tickets to the target movie are available, so you never miss a first-day-first-show again.
 
 This is a Crontask for notification on availability of tickets for a new movie.<br />
 *BookMyShow is used for scraping availability, so check if your city has bookings through BMS before using.*
