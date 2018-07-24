@@ -53,7 +53,7 @@ def mail (mov,loc):
     server.starttls()
     server.login(bot_mail, password)
     SUBJECT = "bms_alert "+mov+" "+loc
-    TEXT = "Hi human,\n\nTicket for "+mov+" is now on sale in "+loc+".\n Cheers!\n\nYours,\nLab PC"
+    TEXT = "Hi Human,\n\nTickets for "+mov+" are now on sale in "+loc+".\n Cheers!\n\nYours,\nLab PC"
     msg = 'Subject: {}\n\n{}'.format(SUBJECT, TEXT) 
     server.sendmail(bot_mail, target_mail, msg)
     server.quit()
