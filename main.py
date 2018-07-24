@@ -24,7 +24,7 @@ mov = ''
 # City where you want to search for ticket availability
 loc = ''
 
-# Login details of bot's gmail account
+# Login details of any gmail account
 bot_mail = ''
 password =''
 
